@@ -1,17 +1,17 @@
 const variations = [
-  { hash: 'v1', name: 'Three-panel cards',     desc: 'Organized layout: cost hero bar + Cost Breakdown, Workload Optimization, and Node Health panels' },
-  { hash: 'v2', name: 'Dark mode',             desc: 'Same three-panel structure with a dark theme' },
-  { hash: 'v3', name: 'Compact status bar',    desc: 'All metrics in a single dense horizontal strip — no panels, no scroll' },
-  { hash: 'v4', name: 'KPI card grid',         desc: 'Eight individual metric cards in a grid — every number gets equal weight' },
-  { hash: 'v5', name: 'Circular gauges',       desc: 'Three key percentages as SVG ring gauges with supporting stats below' },
-  { hash: 'v6', name: 'Executive summary',     desc: 'Five headline numbers only — no charts, no labels beyond the minimum' },
+  { hash: 'v1', name: 'Three-panel cards',    desc: 'Cost hero bar + Cost Breakdown, Workload Optimization, and Node Health panels — the baseline' },
+  { hash: 'v2', name: 'Savings waterfall',    desc: 'Leads with how much of the savings potential is captured, broken out by workload vs. node source' },
+  { hash: 'v3', name: 'Health-first',         desc: 'Node and workload health are the hero — cost appears as the outcome of those decisions' },
+  { hash: 'v4', name: 'Before / After',       desc: 'Side-by-side comparison showing what changed across compute, workload coverage, and node fleet' },
+  { hash: 'v5', name: 'Opportunity view',     desc: 'Flips the lens — leads with what\'s unrealized, showing the gap and backlog by source' },
+  { hash: 'v6', name: 'Allocation view',      desc: 'Proportional segment bars showing how workloads, nodes, and savings are distributed' },
 ]
 
 export default function Landing() {
   return (
     <div style={{ maxWidth: 640, margin: '60px auto', padding: '0 24px', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
       <h1 style={{ fontSize: 20, fontWeight: 600, color: '#111827', marginBottom: 6 }}>Cluster dashboard — variations</h1>
-      <p style={{ fontSize: 14, color: '#6b7280', marginBottom: 32 }}>Six takes on the same data. Click to preview.</p>
+      <p style={{ fontSize: 14, color: '#6b7280', marginBottom: 32 }}>Six layouts of the same data, each emphasizing a different aspect.</p>
       <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 2 }}>
         {variations.map((v, i) => (
           <li key={v.hash}>

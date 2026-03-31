@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react'
 import Landing from './pages/Landing.jsx'
 import V1 from './pages/V1.jsx'
-import V2DarkMode from './pages/V2DarkMode.jsx'
-import V3Compact from './pages/V3Compact.jsx'
-import V4KpiCards from './pages/V4KpiCards.jsx'
-import V5Gauges from './pages/V5Gauges.jsx'
-import V6Executive from './pages/V6Executive.jsx'
+import V2SavingsWaterfall from './pages/V2SavingsWaterfall.jsx'
+import V3HealthFirst from './pages/V3HealthFirst.jsx'
+import V4BeforeAfter from './pages/V4BeforeAfter.jsx'
+import V5Opportunity from './pages/V5Opportunity.jsx'
+import V6Allocation from './pages/V6Allocation.jsx'
 
 const ROUTES = {
   v1: V1,
-  v2: V2DarkMode,
-  v3: V3Compact,
-  v4: V4KpiCards,
-  v5: V5Gauges,
-  v6: V6Executive,
+  v2: V2SavingsWaterfall,
+  v3: V3HealthFirst,
+  v4: V4BeforeAfter,
+  v5: V5Opportunity,
+  v6: V6Allocation,
 }
 
 export default function App() {

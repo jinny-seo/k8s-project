@@ -1,0 +1,111 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Hero: cost + savings summary */
+.hero {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+}
+
+.heroStat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 200px;
+}
+
+.heroDivider {
+  width: 1px;
+  background: #e5e7eb;
+  margin: 0 28px;
+  flex-shrink: 0;
+}
+
+.heroSavings {
+  flex: 1;
+}
+
+.savingsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.savingsNumbers {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.heroLabel {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.heroValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.5px;
+  display: block;
+}
+
+.savingsDenominator {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.savingsPctBadge {
+  font-size: 12px;
+  font-weight: 500;
+  color: #16a34a;
+  background: #f0fdf4;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* Three panels */
+.panels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .panels { grid-template-columns: 1fr; }
+  .hero { flex-direction: column; gap: 20px; }
+  .heroDivider { width: 100%; height: 1px; margin: 4px 0; }
+}
